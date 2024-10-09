@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="Contact Form" icon-name="standard:contact">
+        <div style="padding:20px;" class="slds-form_horizontal">
+            <lightning-input label="FirstName" lwc:ref="fn"></lightning-input>
+            <lightning-input label="LastName" lwc:ref="ln"></lightning-input>
+            <lightning-input label="Email" lwc:ref="em" type="email"></lightning-input>
+        </div>
+        <div slot="actions">
+            <lightning-button label="Save" icon-name="utility:alert" variant="brand"
+            onclick={handleSave}></lightning-button>
+        </div>
+    </lightning-card>
+</template>

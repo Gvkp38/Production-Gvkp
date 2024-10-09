@@ -1,0 +1,8 @@
+<template>
+    <lightning-card title="Contact Data Table">
+        <lightning-input type="toggle" label="Contact Details" checked={checkedv} onchange={callme}></lightning-input>
+        <template if:true={checkedv}>
+        <lightning-record-form object-api-name={sObject} record-id={recordId} fields={fields}></lightning-record-form>
+    </template>
+    </lightning-card>
+</template>

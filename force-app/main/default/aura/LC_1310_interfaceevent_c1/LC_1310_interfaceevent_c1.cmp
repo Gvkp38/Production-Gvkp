@@ -1,0 +1,7 @@
+<aura:component implements="c:LI_1310_EventinterFace">
+    <aura:attribute name="name" type="string"/>
+    <lightning:card title="Component 1">
+        <lightning:input label="Enter name :" value="{!v.name}"/>
+        <lightning:button label="Fire" onclick="{!c.MakeaCall}"/>
+    </lightning:card>
+</aura:component>

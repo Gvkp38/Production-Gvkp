@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title="Contact Edit Form">
+        <lightning-input
+        type="checkbox"
+        label="Show/Hide"
+        checked={showFields}
+        onchange={toggleFields}
+    >
+</lightning-input>
+        <lightning-record-edit-form 
+        record-id={recordId}
+        object-api-name="Contact"
+        density="compact"
+        >
+        <template if:true={showFields}>
+        <lightning-output-field field-name="Name"></lightning-output-field>
+        <lightning-output-field field-name="Phone"></lightning-output-field>
+        <lightning-output-field field-name="Email"></lightning-output-field>
+        <lightning-output-field field-name="GenderIdentity"></lightning-output-field>
+        </template>
+        </lightning-record-edit-form>
+    </lightning-card>
+</template>

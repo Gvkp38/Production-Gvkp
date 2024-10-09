@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Voter" icon-name="standard:contact">
+        <div style="padding:20px">
+            <lightning-input label="Voter Name" lwc:ref="vn"></lightning-input>
+        </div>
+        <div slot="actions">
+            <lightning-button label="Send" icon-name="utility:alert" variant="brand"
+            onclick={handleSend}></lightning-button>
+        </div>
+    </lightning-card>
+</template>

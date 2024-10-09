@@ -1,0 +1,9 @@
+<aura:component >
+    <aura:registerEvent name="cmpEvent" type="c:LE_30_09_event1"/>
+ 	<lightning:card title="Child 1">
+        <lightning:button label="save" onclick="{!c.callme}"/>
+    	this to test the child
+    </lightning:card>
+    <aura:handler name="cmpEvent" event="c:LE_30_09_event1" action="{!c.pullme}"/>
+    
+</aura:component>

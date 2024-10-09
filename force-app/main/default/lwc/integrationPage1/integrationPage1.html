@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Location Finder" class="slds-m-left_medium">
+        <slot name="header">
+            <div class="slds-m-around_medium">
+                <lightning-input type="text" onchange={notechange}></lightning-input>
+                <lightning-button label="Search" onclick={callme}></lightning-button>
+            </div>
+        </slot>
+        <br>
+        <slot name="body">
+            <div class="slds-m-around_medium">
+                {result}
+            </div>
+        </slot>
+    </lightning-card>
+</template>

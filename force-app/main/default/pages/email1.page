@@ -1,0 +1,22 @@
+<apex:page controller="EMail">
+    <apex:form >
+    <apex:pageBlock title="Heyy wana send mail then use this page">
+        <apex:pageBlockSection title="Enter below details">
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel value="Enter To Address: "/>
+                <apex:inputText value="{!toa}"/>
+            </apex:pageBlockSectionItem><apex:pageBlockSectionItem >
+                <apex:outputLabel value="Enter CC Address: "/>
+                <apex:inputText value="{!ccad}"/>
+            </apex:pageBlockSectionItem><apex:pageBlockSectionItem >
+                <apex:outputLabel value="Enter subject: "/>
+                <apex:inputText value="{!sub}"/>
+            </apex:pageBlockSectionItem><apex:pageBlockSectionItem >
+                <apex:outputLabel value="Enter Body: "/>
+                <apex:inputTextArea value="{!body}" />
+            </apex:pageBlockSectionItem>
+            <apex:commandButton value="click on me to send" action="{!sendmsg}"/>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+     </apex:form>
+</apex:page>

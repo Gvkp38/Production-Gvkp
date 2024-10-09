@@ -1,0 +1,8 @@
+<aura:component >
+    <lightning:button label="Follow" iconName="utility:answered_twice" variant="inverse"/>
+    <lightning:buttongroup>
+    <lightning:button label="New Contact" title="Click here to create new contact"/>
+    <lightning:button label="New Case"/>
+    <lightning:button label="New Note"/>
+     </lightning:buttongroup>
+</aura:component>

@@ -1,0 +1,9 @@
+.THIS.style{
+     border-style: solid;
+   border-color: green;
+    padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  background-color: lightblue;
+}

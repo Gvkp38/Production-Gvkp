@@ -1,0 +1,4 @@
+<aura:component >
+    <lightning:button label="Click" variant="brand" onclick="{!c.callme}"/>
+    {!v.body}
+</aura:component>

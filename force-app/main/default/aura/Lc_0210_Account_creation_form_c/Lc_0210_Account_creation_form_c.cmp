@@ -1,0 +1,15 @@
+<aura:component controller="APX_Account_creation_retrive">
+    <aura:registerEvent name="gvk" type="c:LE_0210_Account_event"/>
+    <aura:attribute name="acc1" type="Account" default="{sObjectType:'Account'}"/>
+    <lightning:card title="Account Creation Form" class="style">
+        <lightning:input label="Account Name" value="{!v.acc1.Name}"/>
+        <lightning:input label="Account Phone" value="{!v.acc1.Phone}"/>
+        <lightning:input label="Account Site" value="{!v.acc1.Site}"/>
+        <lightning:input label="Account BillingAddress" value="{!v.acc1.BillingAddress}"/>
+        <aura:set attribute="actions">
+            <lightning:button label="Save" onclick="{!c.Saveme}"/>
+            <lightning:button label="Clear" onclick="{!c.Clearme}"/>
+        </aura:set>
+    </lightning:card>
+	
+</aura:component>

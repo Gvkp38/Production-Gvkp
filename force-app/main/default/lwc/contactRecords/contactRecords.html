@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Contacts" icon-name="standard:contact">
+        <div style="padding:20px;height:40vh">
+            <template lwc:if={cmpspinner}>
+                <lightning-spinner variant="brand"></lightning-spinner>
+            </template>
+            <lightning-datatable data={conlist} columns={tablecols} key-field="Id"></lightning-datatable>
+        </div>
+        <div slot="actions" class="slds-form_inline">
+            <lightning-input placeholder="Firstname" lwc:ref="FN"></lightning-input>
+            <lightning-button label="Show" icon-name="utility:alert" variant="brand"
+            onclick={handleShow}></lightning-button>
+        </div>
+    </lightning-card>
+</template>

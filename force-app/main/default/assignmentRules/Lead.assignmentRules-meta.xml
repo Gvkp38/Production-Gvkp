@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>Standard</fullName>
+        <active>false</active>
+        <ruleEntry>
+            <assignedTo>gvkp38@gmail.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>US,USA,United States,United States of America</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>gvkp38@gmail.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>notEqual</operation>
+                <value>US,USA,United States,United States of America</value>
+            </criteriaItems>
+        </ruleEntry>
+    </assignmentRule>
+    <assignmentRule>
+        <fullName>test</fullName>
+        <active>true</active>
+    </assignmentRule>
+    <assignmentRule>
+        <fullName>testassignemet</fullName>
+        <active>false</active>
+        <ruleEntry>
+            <assignedTo>gvkp38@gmail.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.AnnualRevenue</field>
+                <operation>equals</operation>
+                <value>&quot;INR 1,000&quot;</value>
+            </criteriaItems>
+            <template>unfiled$public/Approval_Mail</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>pavanireddy1111@gmail.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.City</field>
+                <operation>contains</operation>
+                <value>anatatapur</value>
+            </criteriaItems>
+            <template>unfiled$public/CommerceReorderPortalInvitation</template>
+        </ruleEntry>
+    </assignmentRule>
+</AssignmentRules>

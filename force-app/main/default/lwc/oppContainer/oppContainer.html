@@ -1,0 +1,10 @@
+<template>
+    <div style="padding:30px;background-color:yellow">
+        <lightning-button label="Show Opportunities" onclick={handleShow}></lightning-button>
+        <lightning-button label="Remove Opportunities" onclick={handleRemove}></lightning-button>
+        <br/><br/>
+        <template lwc:if={oppcmp}>
+            <c-opp-records></c-opp-records>
+        </template>
+    </div>
+</template>

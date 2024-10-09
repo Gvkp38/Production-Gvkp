@@ -1,0 +1,12 @@
+<aura:component >
+    <aura:handler name="gvk" event="c:LA0110_eg2_AccountCreation" action="{!c.fireme}"/>
+    <aura:attribute name="accdis" type="Account[]"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doinit}"/>
+    <aura:attribute name="clm" type="list"/>
+    <lightning:card title="Account List">
+    	<div class="abc">
+            <c:LC0110_eg2_AccountCreationForm/>
+        </div>
+        <lightning:dataTable data="{!v.accdis}" columns="{!v.clm}" keyField="id"/>
+    </lightning:card>
+</aura:component>

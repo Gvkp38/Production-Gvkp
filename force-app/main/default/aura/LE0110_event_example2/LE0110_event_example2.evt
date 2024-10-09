@@ -1,0 +1,3 @@
+<aura:event type="COMPONENT" description="This is an example event it will accept params as well">
+    <aura:attribute name="parstring" type="string"/>
+</aura:event>

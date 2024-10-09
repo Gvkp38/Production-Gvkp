@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>well come</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>well_come_e_mail_from_Apollo</letterhead>
+    <name>well come to Appolo</name>
+    <style>formalLetter</style>
+    <subject>well come to the world of Apollo</subject>
+    <textOnly>Well Come To The world of Apollo
+Dear {!Contact.FirstName} {!Contact.LastName},
+
+We are happy that you choose Apollo As your Health care taker.
+
+Your registration is successful on  {!Contact.CreatedDate}.
+
+Kindly verify Your details below:
+			Name:{!Contact.FirstName} {!Contact.LastName}
+			Email :{!Contact.Email}
+			Mobile:{!Contact.MobilePhone}
+
+Feel free to reach out to us for Any concerns And Queries.
+
+Thanks&amp;Regards,
+
+{!Contact.OwnerFullName}
+Apollo Relationship Manager</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

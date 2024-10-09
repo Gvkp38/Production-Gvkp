@@ -1,0 +1,4 @@
+<aura:component >
+    <lightning:button label="lets Start.." variant="success" onclick="{!c.giveacall}"/>
+    {!v.body}
+</aura:component>

@@ -1,0 +1,15 @@
+<aura:component controller="ContactController">
+    <aura:handler name="eve2" event="c:LE0110_event_example2" action="{!c.getevent}"/>
+    <aura:attribute name="contactl" type="Contact[]"/>
+    <aura:attribute name="clist" type="list" default="[
+                                                     {fieldName:'Name',label:'Contact Name',type:'text'},
+														{fieldName:'AccountId',label:'Contact AccountId',type:'text'},
+                                                       	{fieldName:'Phone',label:'Contact Phone',type:'text'},
+														{fieldName:'Email',label:'Contact Email',type:'text'},
+														{fieldName:'OwnerId',label:'Contact owner id',type:'text'}
+                                                     ]"/>
+    <lightning:card title="Contact Search Main" iconName="standard:contact">
+        <c:LC0110_eventchild_example2/>
+        <lightning:datatable data="{!v.contactl}" columns="{!v.clist}" keyField="id"/>
+    </lightning:card>
+</aura:component>

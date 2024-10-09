@@ -1,0 +1,16 @@
+<template>
+   <lightning-card title="Register Voter" icon-name="standard:contact">
+    <div style="padding:20px">
+        <lightning-input label="Voter Name" lwc:ref="vn"></lightning-input>
+        <lightning-input label="Voter Constituency" lwc:ref="vc"></lightning-input>
+        <lightning-input label="Voter Age" lwc:ref="va"></lightning-input>
+        <br/>
+        <br/>
+        <strong> {msg} </strong>        
+    </div>
+    <div slot="actions">
+        <lightning-button label="Register" icon-name="utility:alert" variant="brand" 
+        onclick={handleRegister}></lightning-button>
+    </div>
+   </lightning-card> 
+</template>

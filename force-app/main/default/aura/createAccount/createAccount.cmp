@@ -1,0 +1,10 @@
+<aura:component controller="AccountCreationController">
+    <aura:attribute name="accname" type="string"/>
+    <aura:attribute name="accind" type="string"/>
+    <aura:attribute name="accph" type="string"/>
+    <lightning:button label="create" onclick="{!c.create}"/>
+    
+    <lightning:input label="Account Name" value="{!v.accname}"/>
+    <lightning:input label="Account Industry" value="{!v.accind}"/>
+    <lightning:input label="Account Phone" value="{!v.accph}"/>
+</aura:component>

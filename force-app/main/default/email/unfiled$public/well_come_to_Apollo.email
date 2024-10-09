@@ -1,0 +1,14 @@
+<table border="0" cellpadding="5" width="600" cellspacing="5" height="400" >
+<tr valign="top" height="50" >
+<td tEditID="c1r1" style=" background-color:#33CCFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="1" >
+<![CDATA[<div style="text-align: center;"><b style=""><font size="5" style="" color="#000066">Well Come To The world of Apollo</font></b></div>]]></td>
+</tr>
+<tr valign="top" height="300" >
+<td tEditID="c1r2" style=" background-color:#33CCFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r2" locked="0" >
+<![CDATA[<font face="arial"><span style="font-size: 12pt;">Dear <b>{!Contact.FirstName} {!Contact.LastName}</b>,</span></font><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">We are happy that you choose Apollo As your Health care taker.</div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">Your registration is successful on&nbsp;&nbsp;{!Contact.CreatedDate}.</div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">Kindly verify Your details below:</div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span style="white-space:pre">			</span>Name:<span style="font-size: 12pt;">{!Contact.FirstName} {!Contact.LastName}</span></div><div style=""><span style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span style="white-space:pre">			</span>Email :</span><font face="arial">{!Contact.Email}</font></div><div style=""><font face="arial"><span style="white-space:pre">			</span>Mobile:{!Contact.MobilePhone}</font></div><div style=""><font face="arial"><br></font></div><div style=""><font face="arial">Feel free to reach out to us for Any concerns And Queries.</font></div><div style=""><font face="arial"><br></font></div><div style=""><font face="arial">Thanks&amp;Regards,</font></div><div style=""><font face="arial"><br></font></div><div style=""><font face="arial"><i>{!Contact.OwnerFullName}</i></font></div><div style=""><font face="arial"><i>Apollo Relationship Manager</i></font></div>]]></td>
+</tr>
+<tr valign="top" height="50" >
+<td tEditID="c1r3" style=" background-color:#33CCFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r3" locked="0" >
+<![CDATA[]]></td>
+</tr>
+</table>

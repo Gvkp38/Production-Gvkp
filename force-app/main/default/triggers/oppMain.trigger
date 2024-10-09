@@ -1,0 +1,36 @@
+trigger oppMain on Opportunity (after insert, after update, after delete, after undelete,before insert) 
+{
+if(trigger.isinsert&&trigger.isbefore)
+{
+    for(Opportunity opp:trigger.new)
+    {
+        opp.amount+=2;
+        system.debug(opp.amount);
+    }
+}
+/*if(trigger.isafter)
+{
+    if(trigger.isinsert||trigger.isundelete)
+    {
+        OppTriggerHandler.checkoppstatus(trigger.new);
+    }
+    if(trigger.isupdate)
+    {
+        OppTriggerHandler.checkUpdateoppStatus(trigger.new,trigger.oldmap);
+    }
+if(trigger.isdelete) 
+{
+    OppTriggerHandler.checkoppstatus(trigger.old);
+}
+}*/
+if(trigger.isafter)
+{
+if(trigger.isinsert||trigger.isundelete)
+{
+OpportunityMainClass.OppAmountCommonMethod(trigger.new);
+}
+if(trigger.isdelete)
+{
+OpportunityMainClass.OppAmountCommonMethod(trigger.old);
+}}
+}

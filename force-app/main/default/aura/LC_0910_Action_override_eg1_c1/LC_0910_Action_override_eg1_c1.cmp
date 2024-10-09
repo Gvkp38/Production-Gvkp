@@ -1,0 +1,12 @@
+<aura:component >
+    <aura:attribute name="empname" type="string"/>
+    <aura:attribute name="empPhone" type="string"/>
+    <aura:method name="first" action="{!c.callme}">
+        <aura:attribute name="nam" type="string"/>
+        <aura:attribute name="namam" type="string"/>
+    </aura:method>
+   <lightning:card title="Child comp" iconName="standard:account">
+       Name:{!v.empname}<br/>
+       Phone:{!v.empPhone}
+    </lightning:card>
+</aura:component>

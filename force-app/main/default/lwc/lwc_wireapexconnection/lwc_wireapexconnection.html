@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Related Contacts">
+        <template lwc:if={contacts.data}>
+              <template for:each={contacts.data} for:item="contact">
+                <div key={contact.id}>
+                    {contact.Name} ==>{contact.Phone}
+                </div>
+              </template>
+        </template>
+    </lightning-card>
+</template>

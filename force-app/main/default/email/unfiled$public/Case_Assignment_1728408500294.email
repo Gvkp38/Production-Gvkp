@@ -1,0 +1,13 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">Hi Team,<br />
+<br />
+There is a new case #{{{Case.CaseNumber}}} is assigned.<br />
+<br />
+Act quickly and assign it to accordingly to avoid SLA.<br />
+<br />
+Regards,<br />
+Service Cloud Team</body>
+</html>

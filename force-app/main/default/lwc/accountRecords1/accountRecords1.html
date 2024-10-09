@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Account Records" icon-name="standard:account">
+        <div style="padding:20px;height:40vh">
+            <lightning-datatable data={acclist} columns={tablecols} key-field="Id"></lightning-datatable>
+        </div>
+        <div slot="actions">
+            <lightning-input placeholder="Account Name" onchange={handleAccountName}></lightning-input>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>calcyhelptext</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>calcyhelptext</shortDescription>
+        <value>Enter first number</value>
+    </labels>
+    <labels>
+        <fullName>labeltest</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>welcome message</shortDescription>
+        <value>This is test label</value>
+    </labels>
+    <labels>
+        <fullName>labeltest1</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>welcome message</shortDescription>
+        <value>hi....</value>
+    </labels>
+    <labels>
+        <fullName>welcome_message</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>welcome message</shortDescription>
+        <value>Hello have a boring and sleepy day..........</value>
+    </labels>
+</CustomLabels>

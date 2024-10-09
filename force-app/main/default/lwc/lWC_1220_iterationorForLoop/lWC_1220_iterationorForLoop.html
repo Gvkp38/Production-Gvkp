@@ -1,0 +1,20 @@
+<template>
+    ************iteration Through First Method************
+    <template for:each={names} for:item=ea>
+        <p key={ea}>{ea}</p>
+    </template>
+    ************iteration Through Second Method************
+    <template iterator:item={names}>
+        <p key={item.value}>{item.value}</p>
+    </template>
+    ************iteration Through map************
+    <template iterator:item={empDetails}>
+        <p key={item.empDetails}>
+            Name:{item.value.Name}<br>
+            age:{item.value.age}<br>
+            sex:{item.value.sex}<br>
+            ***********break**********
+            </p>
+            
+    </template>
+</template>

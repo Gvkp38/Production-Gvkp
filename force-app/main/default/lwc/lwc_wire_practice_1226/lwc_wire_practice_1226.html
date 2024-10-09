@@ -1,0 +1,10 @@
+<template>
+    <template if:true={Acclist.data}>
+        <template for:each={Acclist.data} for:item="Acc">
+            <p key={Acc.id}>
+            {Acc.Name}
+            </p>
+        </template>
+
+    </template>
+</template>

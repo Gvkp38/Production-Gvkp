@@ -1,0 +1,11 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction" access="global" controller="createContact">
+    <aura:attribute type="String" name="firstName"/>
+    <aura:attribute type="String" name="lastName"/>
+    <lightning:card title="Contact input" iconName="utility:adduser">
+        <lightning:input label="First Name:" value="{!v.firstName}"/>
+        <lightning:input label="Last Name:" value="{!v.lastName}"/>
+        <aura:set attribute="actions">
+            <lightning:button label="Save" variant="brand" onclick="{!c.save}"/>
+        </aura:set>
+    </lightning:card>
+</aura:component>

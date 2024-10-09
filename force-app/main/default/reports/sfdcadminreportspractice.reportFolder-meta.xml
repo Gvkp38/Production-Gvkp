@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportFolder xmlns="http://soap.sforce.com/2006/04/metadata">
+    <folderShares>
+        <accessLevel>Manage</accessLevel>
+        <sharedTo>gvkp38@gmail.com</sharedTo>
+        <sharedToType>User</sharedToType>
+    </folderShares>
+    <folderShares>
+        <accessLevel>View</accessLevel>
+        <sharedTo>trailhead20.s0mwscvfszak.bbc6ot2kaelf@example.com</sharedTo>
+        <sharedToType>User</sharedToType>
+    </folderShares>
+    <name>sfdc admin reports practice</name>
+</ReportFolder>

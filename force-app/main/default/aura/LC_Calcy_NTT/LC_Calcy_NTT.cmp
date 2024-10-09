@@ -1,0 +1,15 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<aura:attribute name="val1" type="Integer"/>
+    <aura:attribute name="val2" type="Integer"/>
+    <aura:attribute name="res" type="Integer"/>
+    <lightning:card title="Calcy">
+        <lightning:input label="Enter First Numebr" value="{!v.val1}"/>
+        <lightning:input label="Enter second Numebr" value="{!v.val2}"/>
+        <aura:set attribute="actions">
+            <lightning:button label="Calculate" variant="brand" onclick="{!c.callMe}"/>
+        </aura:set>
+        <aura:set attribute="footer">
+            <lightning:input label="Calculate" value="{!v.res}"/>
+        </aura:set>
+    </lightning:card>
+</aura:component>

@@ -1,0 +1,15 @@
+<aura:component >
+    <aura:handler event="c:LE_Application_Event" action="{!c.callme}"/>
+    <aura:attribute name="vare1" type="String"/>
+    <lightning:layout>
+   	<lightning:layoutItem size="6">
+    <lightning:card title="This is parent">
+        Hey it is called from parent componet
+        {!v.vare1}
+       </lightning:card>
+    </lightning:layoutItem>
+    <lightning:layoutItem size="6">
+        <c:LC_ChildApplicationEvent/>    
+    </lightning:layoutItem>
+      </lightning:layout>
+</aura:component>

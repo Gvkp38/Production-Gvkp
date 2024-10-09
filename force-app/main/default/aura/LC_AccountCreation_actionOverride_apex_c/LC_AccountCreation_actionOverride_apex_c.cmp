@@ -1,0 +1,15 @@
+<aura:component controller="LC_0910_AccountController">
+    <aura:attribute name="Acc" type="Account"/>
+    <aura:attribute name="Accname" type="string"/>
+    <aura:attribute name="AccPhone" type="string"/>
+    <aura:attribute name="AccId" type="string"/>
+    <aura:method name="Accountvalues" action="{!c.callMe}">
+    	<aura:attribute name="Accname1" type="string"/>
+    	<aura:attribute name="AccPhone1" type="string"/>
+    </aura:method>
+    <lightning:card title="Account Details">
+        Account Name:{!v.Accname}<br/>
+    Account Phone:{!v.AccPhone}<br/>
+    Account Id:{!v.AccId}<br/>
+    </lightning:card>
+</aura:component>

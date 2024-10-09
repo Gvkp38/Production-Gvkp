@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Account Creation through LWC wire">
+ <lightning-input label="Account Name:" type="text" onchange={name1}></lightning-input>
+ <lightning-input label="Account Site:" type="text" onchange={Site1}></lightning-input> 
+ <lightning-input label="Account Industry:" type="text" onchange={Industry1}></lightning-input> 
+ <lightning-input label="Account Rating:" type="text" onchange={Rating1}></lightning-input>
+ <h1 slot="actions">
+    <lightning-button label="Save" onclick={saveThis}></lightning-button>
+ </h1>
+    </lightning-card>
+   
+</template>

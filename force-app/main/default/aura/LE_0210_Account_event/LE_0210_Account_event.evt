@@ -1,0 +1,3 @@
+<aura:event type="APPLICATION" description="This is used to get id frpm child to parrent">
+    <aura:attribute name="ids" type="string"/>
+</aura:event>

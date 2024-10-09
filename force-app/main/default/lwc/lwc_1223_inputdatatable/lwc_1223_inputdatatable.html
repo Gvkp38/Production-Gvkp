@@ -1,0 +1,19 @@
+<template>
+    <lightning-layout>
+        <lightning-layout-item padding="around-medium" size=6>
+    <lightning-card title="Input Your Entry">
+        <lightning-input label="Name" type="string" name="f1"  onchange={capture}></lightning-input>
+        <lightning-input label="Mobile" type="phone" name="f2"  onchange={capture}></lightning-input>
+        <lightning-input label="Mail" type="email" name="f3"  onchange={capture}></lightning-input>
+        <p slot="actions">
+            <lightning-button label="Add" variant="brand" onclick={addtotable}></lightning-button>
+        </p>
+    </lightning-card>
+</lightning-layout-item>
+<lightning-layout-item padding="around-small" size=6>
+    <lightning-card title="lightning output Field">
+        <lightning-datatable key-field="id" data={data} columns={colums}></lightning-datatable>
+    </lightning-card>
+</lightning-layout-item>
+</lightning-layout>
+</template>

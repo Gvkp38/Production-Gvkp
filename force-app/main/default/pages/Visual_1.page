@@ -1,0 +1,22 @@
+<apex:page standardController="Account">
+    Golla Vasanth Kumar<br></br>
+	7032545492<br></br>
+	gvkp38@gmail.com
+<apex:pageBlock title="Summery">
+    <apex:outputfield Value="{!Account.Name}"/>
+    Vasanth has greatly assisted in support activities in terms of Incident/Request assignment and prioritization. He played a key role in analysing ticket trends. He is involved in tracking daily status of tickets and follow up with vendor and user for ticket resolution. He is a good learner in understanding safety database. Recommend Vasanth to generate ideas to streamline support activities with his experience.
+</apex:pageBlock>
+<apex:pageBlock title="Education baground">
+    <apex:pageblocksection title="board of secondary eduction">
+        i have passed 10th class in 2015 with 8.6 CGPA from JNV
+    </apex:pageblocksection>
+    <apex:pageblocksection title="Intermediate">
+        i have passed 12th class in 2015 with 71% CGPA from JNV
+        <apex:pageBlockSectionItem >i have passed 12th class in 2015 with 71% CGPA from JNV</apex:pageBlockSectionItem>
+    </apex:pageblocksection>
+    
+    
+        
+</apex:pageBlock>
+
+</apex:page>

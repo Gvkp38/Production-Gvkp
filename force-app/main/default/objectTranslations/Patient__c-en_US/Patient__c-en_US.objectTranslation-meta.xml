@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Patient</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Patient</value>
+    </caseValues>
+    <layouts>
+        <layout>Patient Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Structured Layout</layout>
+        <sections>
+            <label><!-- Administrative Form --></label>
+            <section>Administrative Form</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- General Details --></label>
+            <section>General Details</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Log a Call --></label>
+        <name>call</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- patient 1 --></label>
+        <name>patient_1</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- structured patient --></label>
+        <name>structured_patient</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- system patient --></label>
+        <name>system_patient</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- kindly enter a correct phone number --></errorMessage>
+        <name>Phone_number</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- about --></label>
+        <name>about</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,12 @@
+<aura:component >
+    <aura:attribute name="Accn" type="string"/>
+    <aura:attribute name="Accp" type="string"/>
+    <lightning:card title="Account Input form">
+        <lightning:input label="Enter Account Name: " value="{!v.Accn}"/>
+        <lightning:input label="Enter Account Phone: " value="{!v.Accp}"/>
+        <aura:set attribute="actions">
+            <lightning:button label="submit" onclick="{!c.submitme}"/>
+        </aura:set>
+    </lightning:card>
+    <c:LC_AccountCreation_actionOverride_apex_c aura:id="c1"/>
+</aura:component>

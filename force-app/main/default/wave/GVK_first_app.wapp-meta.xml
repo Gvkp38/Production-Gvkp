@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assetIcon>/analytics/wave/web/proto/images/app/icons/12.png</assetIcon>
+    <description>this app is created for the testing and learning purpose of tableau crm</description>
+    <folder>GVK_first_app</folder>
+    <masterLabel>GVK first app</masterLabel>
+    <shares>
+        <accessLevel>Manage</accessLevel>
+        <sharedTo>gvkp38@gmail.com</sharedTo>
+        <sharedToType>User</sharedToType>
+    </shares>
+</WaveApplication>

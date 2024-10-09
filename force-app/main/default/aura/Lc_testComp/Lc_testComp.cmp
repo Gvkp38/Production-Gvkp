@@ -1,0 +1,10 @@
+<aura:component>
+    <aura:attribute name="accname" type="string"/>
+    <aura:attribute name="accind" type="string"/>
+    <aura:attribute name="accph" type="string"/>
+    <lightning:button label="create" onclick="{!c.create}"/>
+    
+    <lightning:inputField label="Account Name" value="{!v.accname}"/>
+    <lightning:inputField label="Account Industry" value="{!v.accind}"/>
+    <lightning:inputField label="Account Phone" value="{!v.accph}"/>
+</aura:component>

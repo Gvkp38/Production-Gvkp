@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="Opportunity" icon-name="standard:opportunity">
+        <div style="padding:20px">
+            <template lwc:if={oppform}>
+                <lightning-record-form object-api-name="Opportunity"
+                fields={oppfields} onsuccess={handleSuccess}></lightning-record-form>
+            </template>
+            <a onclick={handleClick}><strong>{msg}</strong></a>
+            <br/>
+            <template lwc:if={opprecform}>
+                <lightning-record-view-form object-api-name="Opportunity" record-id={sfid}>
+                    <lightning-output-field field-name="Name"></lightning-output-field>
+                    <lightning-output-field field-name="AccountId"></lightning-output-field>
+                    <lightning-output-field field-name="StageName"></lightning-output-field>
+                    <lightning-output-field field-name="CloseDate"></lightning-output-field>
+                    <lightning-output-field field-name="Amount"></lightning-output-field>
+                </lightning-record-view-form>
+            </template>
+        </div>
+    </lightning-card>
+</template>

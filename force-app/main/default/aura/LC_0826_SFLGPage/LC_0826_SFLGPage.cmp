@@ -1,0 +1,13 @@
+<aura:component >
+    <div class="page">
+    <div class="logo">
+        <img src="{!$Resource.SFLG}" height="100" width="200"/>
+    </div>
+        
+    <lightning:card class="card">
+        <lightning:input label="User Name"/>
+        <lightning:input label="Password"/>
+        <Lightning:button label="Log In" class="button"/>
+    </lightning:card>
+	</div>
+</aura:component>

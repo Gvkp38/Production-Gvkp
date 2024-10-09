@@ -1,0 +1,13 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    <aura:attribute name="acc" type="Object"/>
+    <force:recordData
+                      recordId="{!v.recordId}"
+                      fields="Name,Phone,Rating,Sic"
+                      targetFields="{!v.acc}"
+                      />
+    <lightning:card title="Account info through recordData" iconName="standard:account">
+        <lightning:input label="Account Name" value="{!v.acc.Name}"/>
+        <lightning:input label="Account Phone" value="{!v.acc.Phone}"/>
+        <lightning:input label="Account Rating" value="{!v.acc.Rating}"/>
+    </lightning:card>
+</aura:component>

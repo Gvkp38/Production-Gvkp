@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="Elections Phase" icon-name="standard:opportunity">
+        <div style="padding: 20px;">
+            <template lwc:if={showPhase1}>
+                <div style="background-color: lime;padding:20px">
+                    You are in Election <lightning-badge label="PHASE 1"></lightning-badge>
+                </div>
+            </template>
+            <template lwc:elseif={showPhase2}>
+                <div style="background-color: yellow;padding:20px">
+                    You are in Election <lightning-badge label="PHASE 2"></lightning-badge>
+                </div>
+            </template>
+            <template lwc:else>
+                <div style="background-color: orange;padding:20px">
+                    <strong>Elections for 2024 are not under progress</strong>
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>

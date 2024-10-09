@@ -1,0 +1,14 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    <aura:attribute name="accountData" type="Account[]"/>
+    <aura:attribute name="accName" type="string"/>
+    <lightning:card title="Account Search Form">
+        <lightning:input label="Enter Account Name" value="{!v.accName}"/>
+        <aura:set attribute="actions">
+            <lightning:button label="Search" variant="brand" onclick="{!c.getaccounts}"/>
+        </aura:set>
+    <aura:iteration var="acc" items="{!v.accountData}">
+        <p>!acc.Name</p>
+        </aura:iteration>
+    </lightning:card>
+	
+</aura:component>

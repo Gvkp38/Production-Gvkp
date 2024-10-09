@@ -1,0 +1,12 @@
+<aura:component controller="Account_creation_controller">
+    <aura:attribute name="acc" type="Account" default="{SobjectType:'Account'}"/>
+    <lightning:card title="Account Creation Form" iconName="standard:account" class="style">
+    	<aura:set attribute="actions">
+            <lightning:button label="Create" onclick="{!c.create}" class="slds-button slds-button_brand"/>
+        </aura:set>
+        <lightning:input label="Account Name: " value="{!v.acc.Name}"/>
+        <lightning:input label="Account Site: " value="{!v.acc.Site}"/>
+        <lightning:input label="Account Billing Address: " value="{!v.acc.BillingAddress}"/>
+        <lightning:input label="Account Fax: " value="{!v.acc.Fax}"/>
+    </lightning:card>
+</aura:component>

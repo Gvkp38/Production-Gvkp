@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_phone</fullName>
+    <active>false</active>
+    <errorConditionFormula>len(Phone)&lt;9</errorConditionFormula>
+    <errorDisplayField>Phone</errorDisplayField>
+    <errorMessage>Account Phone should contain more than 9 characters</errorMessage>
+</ValidationRule>

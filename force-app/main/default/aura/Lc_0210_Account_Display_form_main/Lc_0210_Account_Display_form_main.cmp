@@ -1,0 +1,12 @@
+<aura:component controller="APX_Account_creation_retrive">
+    <aura:handler name="gvk" event="c:LE_0210_Account_event" action="{!c.fireme}"/>
+    <aura:attribute name="accdis" type="Account[]"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doinit}"/>
+    <aura:attribute name="clm" type="list"/>
+    <lightning:card title="Account List">
+    	<div class="abc">
+            <c:Lc_0210_Account_creation_form_c/>
+        </div>
+        <lightning:dataTable data="{!v.accdis}" columns="{!v.clm}" keyField="id"/>
+    </lightning:card>
+</aura:component>

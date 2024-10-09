@@ -1,0 +1,15 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">Hi&nbsp;{{{Case.SuppliedName}}},<br />
+<br />
+Thanks For Reaching out to me, your case is created with us successfully.<br />
+<br />
+we would be taking case of this case and let and respond back on top of this email if you have any concerns.<br />
+<br />
+Regards,<br />
+Vasanth&nbsp;
+<div style="display:none;">{{{Case.threadid__c}}}</div>
+</body>
+</html>

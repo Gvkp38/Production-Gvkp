@@ -1,0 +1,6 @@
+<aura:component >
+    <aura:registerEvent name="gvk" type="c:LE_0210_ApplicationEvent"/>
+    <lightning:card title="Parent Child 1">
+        <lightning:button label="Save" onclick="{!c.savehere}"/>
+    </lightning:card>
+</aura:component>

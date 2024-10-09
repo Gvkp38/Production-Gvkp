@@ -1,0 +1,6 @@
+<aura:component >
+    <aura:handler name="eve1" event="c:testcomponent" action="{!c.Pass}"/>
+    <aura:attribute name="pavani" type="String"/>
+    from parent {!v.pavani}
+    <c:eventchild1/>
+</aura:component>

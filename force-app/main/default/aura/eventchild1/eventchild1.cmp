@@ -1,0 +1,6 @@
+<aura:component >
+    <aura:registerEvent name="eve1" type="c:testcomponent"/>
+    <aura:attribute type="String" name="in1"/>
+    <lightning:input label="input Text:" value="{!v.in1}"/>
+    <lightning:button label="Save" onclick="{!c.Callme}"/>
+</aura:component>

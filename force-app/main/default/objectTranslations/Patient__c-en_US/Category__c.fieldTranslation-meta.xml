@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Category --></label>
+    <name>Category__c</name>
+    <picklistValues>
+        <masterLabel>Andrology</masterLabel>
+        <translation><!-- Andrology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ent</masterLabel>
+        <translation><!-- Ent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gynaecology</masterLabel>
+        <translation><!-- Gynaecology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gyno</masterLabel>
+        <translation><!-- Gyno --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Haematology</masterLabel>
+        <translation><!-- Haematology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Neuro</masterLabel>
+        <translation><!-- Neuro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Neurology</masterLabel>
+        <translation><!-- Neurology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Others</masterLabel>
+        <translation><!-- Others --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sinology</masterLabel>
+        <translation><!-- Sinology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>cardiology</masterLabel>
+        <translation><!-- cardiology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>general</masterLabel>
+        <translation><!-- general --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ob/gyn</masterLabel>
+        <translation><!-- ob/gyn --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ortho</masterLabel>
+        <translation><!-- ortho --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

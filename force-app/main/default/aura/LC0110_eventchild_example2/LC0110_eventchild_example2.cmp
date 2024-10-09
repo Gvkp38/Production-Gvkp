@@ -1,0 +1,10 @@
+<aura:component >
+    <aura:registerEvent name="eve2" type="c:LE0110_event_example2"/>
+    <aura:attribute name="ST" type="string"/>
+    <lightning:card title="Search Card">
+    	<aura:set attribute="actions">
+            <lightning:input value="{!v.ST}"/>
+            <lightning:button label="Search" onclick="{!c.search}" variant="brand"/>
+        </aura:set>
+    </lightning:card>
+</aura:component>

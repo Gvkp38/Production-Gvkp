@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <assignments>
+        <name>upadete_comment</name>
+        <label>upadete comment</label>
+        <locationX>366</locationX>
+        <locationY>429</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Opportunity_Change_Tracker__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Oppchangemessage</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <name>check_if_you_have_obserevd_change_in_opp_amount</name>
+        <label>check if you have observed change in opp amount</label>
+        <locationX>462</locationX>
+        <locationY>328</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Amountchange</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Amount</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record__Prior.Amount</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>upadete_comment</targetReference>
+            </connector>
+            <label>Amountchange</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>oppAfterupdateflow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>oppAfterupdateflow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>306</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>check_if_you_have_obserevd_change_in_opp_amount</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Amount</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <object>Opportunity</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>Oppchangemessage</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;There is a change detected in Opportunity amount, it got changed from &lt;strong&gt;{!$Record__Prior.Amount}&lt;/strong&gt; to &lt;strong&gt;{!$Record.Amount}.&lt;/strong&gt;&lt;/p&gt;</text>
+    </textTemplates>
+</Flow>

@@ -1,0 +1,5 @@
+<aura:interface description="Interface template">
+	<aura:attribute name="Name" type="String"/>
+    <aura:attribute name="Phone" type="String"/>
+    <aura:attribute name="Email" type="String"/>
+</aura:interface>

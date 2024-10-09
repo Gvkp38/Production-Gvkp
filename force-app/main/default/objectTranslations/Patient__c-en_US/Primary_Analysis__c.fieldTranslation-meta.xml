@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Facility Required --></label>
+    <name>Primary_Analysis__c</name>
+    <picklistValues>
+        <masterLabel>AC Ward</masterLabel>
+        <translation><!-- AC Ward --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Common Room</masterLabel>
+        <translation><!-- Common Room --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dedicated nurse</masterLabel>
+        <translation><!-- Dedicated nurse --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General Ward</masterLabel>
+        <translation><!-- General Ward --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Separate Room</masterLabel>
+        <translation><!-- Separate Room --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

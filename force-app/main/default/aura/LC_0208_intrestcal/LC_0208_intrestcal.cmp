@@ -1,0 +1,21 @@
+<aura:component >
+    
+    <aura:attribute name="principle" type="integer"/>
+    <aura:attribute name="Timeperiod" type="integer"/>
+    <aura:attribute name="rate" type="decimal"/>
+    <aura:attribute name="intrest" type="decimal"/>
+    <aura:attribute name="total" type="decimal"/>
+    <lightning:card title="Intrest calculator" iconName="utility:bug">
+        <aura:set attribute="footer">
+            <lightning:buttonGroup>
+                <lightning:button label="Simple Intrest" onclick="{!c.si}" iconName="utility:einstein"/>
+                <lightning:button label="compound Intrest" onclick="{!c.ci}" iconName="utility:food_and_drink"/>
+            </lightning:buttonGroup>
+        </aura:set>
+        <lightning:input label="Amount Given: " value="{!v.principle}"/>
+        <lightning:input label="Time period: " value="{!v.Timeperiod}"/>
+        <lightning:input label="Rate of intrest: " value="{!v.rate}"/>
+        <lightning:input label="Intrest Accumilated: " value="{!v.intrest}"/>
+        <lightning:input label="Total Amount: " value="{!v.total}"/>
+    </lightning:card>
+</aura:component>

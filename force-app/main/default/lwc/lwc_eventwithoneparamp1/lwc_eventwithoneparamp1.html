@@ -1,0 +1,11 @@
+<template>
+    <lightning-layout>
+        <lightning-layout-item size=6>
+        <lightning-card title="Volume controller" icon-name="utility:volume_high">
+            <p>
+            {paramfromchild}={volume}</p>
+           <c-lwc_eventwithoneparamc1 oninc={fireincevent} ondec={firedecevent}></c-lwc_eventwithoneparamc1>
+        </lightning-card>
+        </lightning-layout-item>
+    </lightning-layout>
+</template>

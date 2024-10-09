@@ -1,0 +1,20 @@
+<aura:component controller="CL_2509_EG2_retriveData">
+    <aura:attribute type="Account" name="acc"/>
+    <aura:handler name="init" value="{!this}" action="{!c.showme}"/>
+    <lightning:card>
+    <aura:set attribute="title">
+     <h2>
+      	Account
+        </h2>
+        <h1>{!v.acc.Name}</h1>
+      </aura:set>
+       <aura:set attribute="actions">
+           <lightning:button label="Follow" iconName="utility:add"/>
+           <lightning:buttonGroup>
+           <lightning:button label="New Contact"/>
+           <lightning:button label="New Case" onclick="{!c.callme}"/>
+           <lightning:button label="New Note"/>
+            </lightning:buttonGroup>
+       </aura:set>
+    </lightning:card>
+</aura:component>

@@ -1,0 +1,15 @@
+<aura:component >
+    <lightning:layout>
+        <lightning:layoutItem size="6">
+    <lightning:card title="Display form">
+	<lightning:recordViewForm recordId="0015i00000KfFbvAAF" objectApiName="Account">
+        <lightning:outputField fieldName="Name"/>
+        <lightning:outputField fieldName="AccountNumber"/>
+        <lightning:outputField fieldName="Site"/>
+        <lightning:outputField fieldName="BillingAddress"/>
+        <lightning:outputField fieldName="Industry"/>
+    </lightning:recordViewForm>
+        </lightning:card>
+            </lightning:layoutItem>
+        </lightning:layout>
+</aura:component>

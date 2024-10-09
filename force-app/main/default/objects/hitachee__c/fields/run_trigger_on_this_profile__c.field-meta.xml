@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>run_trigger_on_this_profile__c</fullName>
+    <businessOwnerUser>gvkp39@gmail.com</businessOwnerUser>
+    <defaultValue>true</defaultValue>
+    <externalId>false</externalId>
+    <label>run trigger on this profile</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

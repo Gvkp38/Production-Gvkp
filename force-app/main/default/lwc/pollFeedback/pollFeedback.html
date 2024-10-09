@@ -1,0 +1,30 @@
+<template>
+    <div>
+        <div class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <div class="slds-modal__header">
+                    <strong>Poll Feedback Form</strong>
+                </div>
+                <div class="slds-modal__content" style="padding:20px">
+                    <lightning-input label="Voter Name" required="true"
+                    message-when-value-missing="Enter voter name"
+                    minlength="2"
+                    message-when-too-short="Voter name can't be less than 2 charts"
+                    max-length="50"
+                    pattern="[A-Za-z]*"
+                    message-when-pattern-mismatch="Invalid Voter name" onchange={handleInput}></lightning-input>
+                    <lightning-input label="State" required="true"
+                    message-when-value-missing="Enter voter State" onchange={handleInput}></lightning-input>
+                    <lightning-input label="Feedback" required="true"
+                    message-when-value-missing="Enter Feedback" onchange={handleInput}></lightning-input>
+                </div>
+                <div class="slds-modal__footer">
+                    <lightning-button label="Submit Feedback" variant="brand" disabled="true" lwc:ref="B1"
+                    onclick={handleFeedback}></lightning-button>
+                </div>
+            </div>
+        </div>
+        <div class="slds-backdrop slds-backdrop_open">
+        </div>
+    </div>
+</template>

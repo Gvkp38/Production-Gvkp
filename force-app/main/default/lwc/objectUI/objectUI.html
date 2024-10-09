@@ -1,0 +1,32 @@
+<template>
+   <lightning-card>
+     <div slot="title">
+        <lightning-icon icon-name="standard:account" size="medium"></lightning-icon>
+        &nbsp;
+        <span style="font-size:20px;font-weight:bolder;">Polling</span>
+        <br/>
+        <span style="font-size:12px;">This is polling information of Elections 2024</span>
+     </div>
+     <div slot="actions" class="slds-form_inline" style="text-align:right">
+        <lightning-button-group>
+            <lightning-button label="New" onclick={handleNew}></lightning-button>
+        </lightning-button-group>
+        <br/>
+        <lightning-input type="search" placeholder="search"></lightning-input>
+        &nbsp;
+        <lightning-button-icon icon-name="utility:alert" onclick={handleAlert}></lightning-button-icon>
+        <lightning-button-icon icon-name="utility:announcement"></lightning-button-icon>
+        <lightning-button-icon icon-name="utility:activity"></lightning-button-icon>
+     </div>
+     <div style="padding:20px;height:60vh;background-color:lightgray"> 
+      <template lwc:if={feedform}>
+         <c-poll-feedback onfeedbackevent={handleEvent}></c-poll-feedback>
+      </template>
+         <lightning-datatable data={datalist} columns={tablecols} key-field="id"
+         show-row-number-column="true" onrowaction={handleRowActions}></lightning-datatable>
+     </div>
+     <div slot="footer">
+        This is Object Tab template
+     </div>
+   </lightning-card> 
+</template>

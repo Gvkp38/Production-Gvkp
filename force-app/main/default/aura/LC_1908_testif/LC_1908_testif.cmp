@@ -1,0 +1,23 @@
+<aura:component >
+    <aura:attribute name='intrest' type='decimal'/>
+    <aura:attribute name='Principle' type='decimal'/>
+    <aura:attribute name='tensure' type='decimal'/>
+    <aura:attribute name='Result' type='decimal'/>
+    <aura:attribute name='flag' type='boolean' default="false"/>
+    <lightning:card title="Intrest Calsi input" iconName="utility:calculated_insights" class="Test">
+        <aura:set attribute="actions">
+            <lightning:button label="Submit" onclick="{!c.callme}"/>
+        </aura:set>
+        <lightning:input label="Enter Principle Amount:" value="{!v.Principle}"/>
+        <lightning:input label="Enter Rate of intrest:" value="{!v.intrest}"/>
+        <lightning:input label="Enter Number of years:" value="{!v.tensure}"/>
+    </lightning:card>
+<aura:if isTrue="{!v.flag}"> 
+   <lightning:card title="results">
+       Principle Amount:{!v.Principle} <br/>
+       Rate of intrest: {!v.intrest}	<br/>
+       Number of years: {!v.tensure}	<br/>
+       Amount at the time of return: {!v.Result}
+    </lightning:card>
+    </aura:if>  
+</aura:component>

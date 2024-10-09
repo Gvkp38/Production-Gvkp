@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Account Records" icon-name="standard:account">
+        <div style="padding:20px;height:40vh">
+            <lightning-datatable data={acclist} columns={tablecols} key-field="Id"></lightning-datatable>
+        </div>
+        <div slot="actions">
+            <lightning-button label="Show" icon-name="utility:alert" variant="brand"
+            onclick={handleShow}></lightning-button>
+        </div>
+    </lightning-card>
+</template>

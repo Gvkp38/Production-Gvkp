@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <environments>Default</environments>
+    <interviewLabel>Account Creation {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Account Creation</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <screens>
+        <name>Account_Input_Form</name>
+        <label>Account Input Form</label>
+        <locationX>496</locationX>
+        <locationY>185</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>Account_Name</name>
+            <dataType>String</dataType>
+            <fieldText>Account Name</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Phone_Numebr</name>
+            <dataType>Number</dataType>
+            <fieldText>Phone Number</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+            <scale>0</scale>
+        </fields>
+        <helpText>&lt;p&gt;Enter Account Details to create it through apex.&lt;/p&gt;</helpText>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>306</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>Account_Input_Form</targetReference>
+        </connector>
+    </start>
+    <status>Draft</status>
+</Flow>

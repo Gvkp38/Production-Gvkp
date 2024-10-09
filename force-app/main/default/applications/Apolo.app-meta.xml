@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <logo>Apollo_Hospitals_Logosvg</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>true</shouldOverrideOrgTheme>
+    </brand>
+    <description>this app is created to maintain the database of apollo hospitals</description>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>Apollo hospital management</label>
+    <navType>Standard</navType>
+    <tabs>Patient__c</tabs>
+    <tabs>Site__c</tabs>
+    <tabs>Payment__c</tabs>
+    <tabs>Applicants__c</tabs>
+    <tabs>Jobs__c</tabs>
+    <tabs>employee__c</tabs>
+    <tabs>Case_Listing__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Apollo_hospital_management_UtilityBar</utilityBar>
+</CustomApplication>

@@ -1,0 +1,25 @@
+<apex:page controller="accountcreation">
+    <apex:form >
+    <apex:pageblock title="Accont Creation">
+        <apex:pageblocksection title="Enter Account creation">
+            <apex:pageblocksectionitem >
+                <apex:outputLabel value="Account Name"/>
+                <apex:inputText value="{!acc.name}"/>
+            </apex:pageblocksectionitem> 
+                        <apex:pageblocksectionitem >
+                <apex:outputLabel value="Account Phone"/>
+                <apex:inputText value="{!acc.phone}"/>
+            </apex:pageblocksectionitem> 
+                        <apex:pageblocksectionitem >
+                <apex:outputLabel value="Account Fax"/>
+                <apex:inputText value="{!acc.Fax}"/>
+            </apex:pageblocksectionitem> 
+                        <apex:pageblocksectionitem >
+                <apex:outputLabel value="Account Number"/>
+                <apex:inputText value="{!acc.AccountNumber}"/>
+            </apex:pageblocksectionitem> 
+            <apex:commandButton value="save" action="{!abc}"/>
+        </apex:pageblocksection>
+    </apex:pageblock>
+        </apex:form>
+</apex:page>

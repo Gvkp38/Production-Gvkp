@@ -1,0 +1,8 @@
+<aura:component >
+    <aura:handler event="c:LE_0210_ApplicationEvent" action="{!c.callme}"/>
+    <aura:attribute name="me" type="string"/>
+    <lightning:card title="Child2">
+    		This is from Lightnig child 2:{!v.me}
+        <c:LE_0210_P1C1G1_component/>
+    </lightning:card>
+</aura:component>

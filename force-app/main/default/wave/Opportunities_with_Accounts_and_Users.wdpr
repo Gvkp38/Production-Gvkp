@@ -1,0 +1,166 @@
+{
+  "version" : "55.0",
+  "nodes" : {
+    "LOAD_DATASET1" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "Amount", "CloseDate", "CreatedDate", "Name", "StageName", "AccountId", "OwnerId" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "Opportunity",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "Opportunity"
+        },
+        "sampleDetails" : {
+          "type" : "TopN"
+        }
+      }
+    },
+    "LOAD_DATASET2" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "Name", "Id", "BillingCity", "SicDesc", "Type", "BillingCountry", "Industry", "OwnerId" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "Account",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "Account"
+        },
+        "sampleDetails" : {
+          "type" : "TopN"
+        }
+      }
+    },
+    "JOIN0" : {
+      "action" : "join",
+      "sources" : [ "LOAD_DATASET1", "LOAD_DATASET2" ],
+      "schema" : {
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LOOKUP",
+        "leftKeys" : [ "AccountId" ],
+        "rightQualifier" : "Accounts",
+        "rightKeys" : [ "Id" ]
+      }
+    },
+    "JOIN1" : {
+      "action" : "join",
+      "sources" : [ "JOIN0", "LOAD_DATASET3" ],
+      "schema" : {
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LOOKUP",
+        "leftKeys" : [ "Name" ],
+        "rightQualifier" : "User",
+        "rightKeys" : [ "Name" ]
+      }
+    },
+    "LOAD_DATASET3" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "Name", "Title", "Id" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "User",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "User"
+        },
+        "sampleDetails" : {
+          "type" : "TopN"
+        }
+      }
+    },
+    "OUTPUT0" : {
+      "action" : "save",
+      "sources" : [ "JOIN1" ],
+      "parameters" : {
+        "fields" : [ ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "Opportunities_with_Accounts_and_Users",
+          "name" : "Opportunities_with_Accounts_and_Users"
+        }
+      }
+    }
+  },
+  "ui" : {
+    "nodes" : {
+      "LOAD_DATASET1" : {
+        "label" : "Opportunity",
+        "type" : "LOAD_DATASET",
+        "top" : 111.5,
+        "left" : 112.19999999999999,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "LOAD_DATASET2" : {
+        "label" : "Account",
+        "type" : "LOAD_DATASET",
+        "top" : 252,
+        "left" : 111.9,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "JOIN0" : {
+        "label" : "Join 0",
+        "type" : "JOIN",
+        "top" : 112,
+        "left" : 390.2
+      },
+      "JOIN1" : {
+        "label" : "Join 1",
+        "type" : "JOIN",
+        "top" : 112,
+        "left" : 530.2
+      },
+      "LOAD_DATASET3" : {
+        "label" : "User",
+        "type" : "LOAD_DATASET",
+        "top" : 392,
+        "left" : 112.30000000000001,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "OUTPUT0" : {
+        "label" : "Output 0",
+        "type" : "OUTPUT",
+        "top" : 112,
+        "left" : 672
+      }
+    },
+    "connectors" : [ {
+      "source" : "LOAD_DATASET1",
+      "target" : "JOIN0"
+    }, {
+      "source" : "LOAD_DATASET2",
+      "target" : "JOIN0"
+    }, {
+      "source" : "JOIN0",
+      "target" : "JOIN1"
+    }, {
+      "source" : "LOAD_DATASET3",
+      "target" : "JOIN1"
+    }, {
+      "source" : "JOIN1",
+      "target" : "OUTPUT0"
+    } ],
+    "hiddenColumns" : [ ],
+    "assetType" : "TCRM"
+  }
+}

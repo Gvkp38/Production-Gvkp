@@ -1,0 +1,28 @@
+<template>
+    <lightning-card title="Phase 1 States" icon-name="standard:announcement">
+        <div style="padding:20px">
+            <strong>States participating in Phase 1 POLL</strong>
+            <br/>
+            <template for:each={phase1List} for:item="stname">
+                <p key={stname}>
+                    <lightning-badge label={stname}></lightning-badge>
+                </p>
+            </template>
+            <br/><br/>
+            <table>
+                <tr>
+                    <th>Statename</th>
+                    <th>Month</th>
+                    <th>Date</th>
+                </tr>
+                <template for:each={phase1ListData} for:item="pdata">
+                    <tr key={pdata.state}>
+                        <td><lightning-badge label={pdata.state}></lightning-badge></td>
+                        <td><lightning-badge label={pdata.month}></lightning-badge></td>
+                        <td><lightning-badge label={pdata.date}></lightning-badge></td>
+                    </tr>
+                </template>
+            </table>
+        </div>
+    </lightning-card>
+</template>

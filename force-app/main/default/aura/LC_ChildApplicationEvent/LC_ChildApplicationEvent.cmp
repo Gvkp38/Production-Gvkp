@@ -1,0 +1,10 @@
+<aura:component >
+    <aura:registerEvent name="testevent1" type="c:LE_Application_Event"/>
+    <aura:attribute name="val1" type="String"/>
+    <lightning:card title="Child card">
+        <aura:set attribute="actions">
+            <lightning:button label="pass" variant="brand" onclick="{!c.callMe}"/>
+        </aura:set>
+        <lightning:input label="Enter Value" value="{!v.val1}"/>
+    </lightning:card>
+</aura:component>

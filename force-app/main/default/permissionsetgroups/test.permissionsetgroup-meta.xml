@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>test</label>
+    <mutingPermissionSets>test_Muted</mutingPermissionSets>
+    <permissionSets>force__B2BBuyer</permissionSets>
+    <permissionSets>force__B2BBuyerManager</permissionSets>
+    <permissionSets>sfdcInternalInt__sfdc_aiplatform</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

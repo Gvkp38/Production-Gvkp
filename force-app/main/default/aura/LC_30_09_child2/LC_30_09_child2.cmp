@@ -1,0 +1,6 @@
+<aura:component >
+    <aura:handler name="cmpEvent" event="c:LE_30_09_event1" action="{!c.playme}"/> 
+	<lightning:card title="card2">
+        <c:LC_30_09_child1/>
+    </lightning:card>
+</aura:component>

@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Raju Calcy" icon-name="utility:home">
+        <div class="slds-border_bottom">
+            <span class="boldfont">First Number</span><lightning-helptext icon-name="utility:info_alt" content={calcyhelptext}></lightning-helptext><br>
+            <lightning-input type="number" label="" name="f1"  onchange={change1} variant="label-hidden"></lightning-input>
+            </div>
+        
+        <lightning-input type="number" label="Second Number:" name="f2" onchange={change1} ></lightning-input>
+        <lightning-button-group slot="actions">
+            <lightning-button label="Add" variant="destructive" onclick={add}></lightning-button>
+            <lightning-button label="Sub" variant="success" onclick={Sub}></lightning-button>
+            <lightning-button label="Mul" variant="brand" onclick={Mul}></lightning-button>
+        </lightning-button-group>
+        <div slot="footer" class="slds-align_absolute-center">
+            Result:{result}
+        </div>
+    </lightning-card>
+    
+</template>

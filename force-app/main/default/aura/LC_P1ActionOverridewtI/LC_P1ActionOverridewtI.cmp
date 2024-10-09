@@ -1,0 +1,10 @@
+<aura:component implements="c:LI_MethodEx1">
+    <aura:attribute name="Name1" type="string"/>
+    <aura:attribute name="Phone1" type="string"/>
+    <c:LC_C1ActionOverridewtI aura:id="abc1"/>
+	<lightning:card title="Parent1">
+        <lightning:input label="Name :" value="{!v.Name1}"/>
+        <lightning:input label="Phone :" value="{!v.Phone1}"/>
+        <lightning:button label="Save" onclick="{!c.yaahhh}"/>
+    </lightning:card>
+</aura:component>

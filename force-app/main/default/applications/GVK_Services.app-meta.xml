@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0DF421</headerColor>
+        <shouldOverrideOrgTheme>true</shouldOverrideOrgTheme>
+    </brand>
+    <description>This App is created to Manage GVK Travel query&apos;s</description>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>GVK Services</label>
+    <navType>Console</navType>
+    <setupExperience>service</setupExperience>
+    <tabs>standard-Account</tabs>
+    <tabs>standard-Contact</tabs>
+    <tabs>standard-Case</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>GVK_Services_UtilityBar</utilityBar>
+    <workspaceConfig>
+        <mappings>
+            <tab>standard-Account</tab>
+        </mappings>
+        <mappings>
+            <fieldName>AccountId</fieldName>
+            <tab>standard-Case</tab>
+        </mappings>
+        <mappings>
+            <fieldName>AccountId</fieldName>
+            <tab>standard-Contact</tab>
+        </mappings>
+    </workspaceConfig>
+</CustomApplication>

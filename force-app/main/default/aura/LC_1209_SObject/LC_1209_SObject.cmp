@@ -1,0 +1,5 @@
+<aura:component >
+    <aura:attribute name="Account" type="Account" default="{sObjectType: 'Account'}"/>
+    <lightning:card title="Account" iconName="standard:account">
+    </lightning:card>
+</aura:component>

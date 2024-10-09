@@ -1,0 +1,23 @@
+<aura:component controller="AccountSearchController">
+    <aura:attribute name="acc" type="Account[]"/>
+    <aura:attribute name="src" type="string"/>
+    <lightning:card title="Account Search">
+    <lightning:layout>
+    	<lightning:layoutItem size="6">
+            <lightning:input label="Account Search" value="{!v.src}"/> 
+        </lightning:layoutItem>
+        <lightning:layoutItem size="6">
+            <lightning:button label="Search" variant="brand" onclick="{!c.Search}"/>   
+        </lightning:layoutItem>
+    </lightning:layout>
+      <lightning:layout multipleRows="true">
+    	<aura:iteration items="{!v.acc}" var="a">
+          <lightning:layoutItem size="3" padding="around-small" class="style">
+          Account Name={!a.Name}<br></br>
+          Account OwnerId={!a.OwnerId}<br></br>
+          Account Phone={!a.Phone}<br></br>
+         </lightning:layoutItem>
+        </aura:iteration>
+    </lightning:layout>
+   </lightning:card>
+</aura:component>

@@ -1,0 +1,11 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">Hi {{{Recipient.Name}}}<br />
+<br />
+welcome to gvkp technologies, we are happy to welcome you on board.<br />
+<br />
+Regards,<br />
+Vasanth</body>
+</html>

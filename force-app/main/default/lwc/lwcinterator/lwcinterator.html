@@ -1,0 +1,19 @@
+<template>
+    <template if:true={friendsnames}>
+    <template for:each={friendsnames} for:item=ea>
+        <p key={ea}>{ea.Name}<br>
+            {ea.age}<br>
+            {ea.sex}<br>
+        
+        </p>
+    </template>
+</template>
+    second method of displaying 
+    <template iterator:it={friendsnames}>
+        <p key={it.friendsnames}>
+            {it.value.Name}
+            {it.value.age}
+            {it.value.sex}
+        </p>
+    </template>
+</template>

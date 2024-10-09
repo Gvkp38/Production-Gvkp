@@ -1,0 +1,8 @@
+<aura:component controller="APX_0310_ApplicationEventController">
+    <aura:handler event="c:LE_ApplicationEvent_0310" action="{!c.callme}"/>
+    <aura:attribute name="list1" type="Object"/>
+    <aura:attribute name="clist" type="list"/>
+    <lightning:card title="Contacts with account">
+        <lightning:dataTable data="{!v.list1}" columns="{!v.clist}" keyField="id"/>
+    </lightning:card>
+</aura:component>

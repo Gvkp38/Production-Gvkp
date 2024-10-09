@@ -1,0 +1,13 @@
+<aura:component >
+    <aura:attribute name="arg1" type="string"/>
+    <aura:attribute name="arg2" type="string"/>
+    <lightning:card title="Parent Card">
+        <lightning:input label="Enter Name: " value="{!v.arg1}"/>
+        <lightning:input label="Enter Phone: " value="{!v.arg2}"/>
+     <aura:set attribute="actions">
+         <lightning:button label="Submit" variant="brand" onclick="{!c.yeahitsme}"/>
+     </aura:set>
+    </lightning:card>
+    <c:LC_0910_Action_override_eg1_c1 aura:id="action1"/>
+    
+</aura:component>

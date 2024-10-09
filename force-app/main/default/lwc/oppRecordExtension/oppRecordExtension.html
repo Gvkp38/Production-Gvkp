@@ -1,0 +1,10 @@
+<template>
+    <div style="height:40vh;padding:20px;background-color:aqua;box-shadow:4px 4px grey">
+        <template lwc:if={recFound}>
+            Parent Account Name : <lightning-badge label={oppRec.Account.Name}></lightning-badge> <br/>
+            Parent Account Revenue : <lightning-badge label={oppRec.Account.AnnualRevenue}></lightning-badge> <br/>
+            Parent Account City : <lightning-badge label={oppRec.Account.BillingCity}></lightning-badge> <br/>
+            Parent Account State : <lightning-badge label={oppRec.Account.BillingState}></lightning-badge> <br/>
+        </template>
+    </div>
+</template>

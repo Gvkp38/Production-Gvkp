@@ -1,0 +1,13 @@
+<aura:component >
+	<lightning:layout >
+    <lightning:layoutItem size="4">
+        <c:LC_componentSearchEvent_0310/>
+    </lightning:layoutItem>
+      <lightning:layoutItem size="4">
+          <c:LC_componentContact_0310/>
+    </lightning:layoutItem>
+     <lightning:layoutItem size="4">
+        <c:LC_componentOpp_0310/>
+    </lightning:layoutItem>
+    </lightning:layout>
+</aura:component>

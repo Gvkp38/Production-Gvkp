@@ -1,0 +1,32 @@
+<template>
+	<table class="slds-table slds-table_bordered">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Email</th>
+				<th>Phone</th>
+			</tr>
+		</thead>
+		<tbody>
+			<template for:each={conList} for:item="opp">
+				<!-- define a custom attribute and pass con.id-->
+				<tr key={opp.Id} data-sid={opp.Id} onclick={handleClick}>
+					<td>{opp.Name}</td>
+					<template if:true={opp.Email}>
+					<td>{opp.Email}</td>
+					</template>
+					<template if:false={opp.Email}>
+					<td><lightning-badge label="No Email" class="slds-theme_error"></lightning-badge></td>
+					</template>
+					<template if:true={opp.Phone}>
+					<td>{opp.Phone}</td>
+					</template>
+					<template if:false={opp.Phone}>
+					<td><lightning-badge label="No Phone" class="slds-theme_error"></lightning-badge></td>
+					</template>
+					
+				</tr>
+			</template>
+		</tbody>
+	</table>
+</template>

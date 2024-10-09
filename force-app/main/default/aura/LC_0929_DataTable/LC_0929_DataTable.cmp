@@ -1,0 +1,26 @@
+<aura:component controller="AccountSearchController">
+    <aura:attribute name="Serchstring" type="string"/>
+    <aura:attribute name="accountv" type="Account[]"/>
+    <aura:attribute name="colums" type="list" default="[
+														{fieldName:'Name',label:'Account Name',type:'text'},
+														{fieldName:'AccountNumber',label:'Account Number',type:'text'},
+                                                       	{fieldName:'Site',label:'Account Site',type:'text'},
+														{fieldName:'Phone',label:'Phone',type:'text'},
+														{fieldName:'OwnerId',label:'Account owner id',type:'text'}
+                                                       ]"/>
+    <lightning:card title="Accounts" iconName="standard:account">
+        <aura:set attribute="actions">
+            <lightning:layout>
+             <lightning:layoutItem size="6">
+            <lightning:input value="{!v.Serchstring}"/>
+             </lightning:layoutItem>
+               <lightning:layoutItem size="6">
+            <lightning:button label="Search" variant="brand" onclick="{!c.Search}"/>
+             </lightning:layoutItem>
+            
+            </lightning:layout>
+        </aura:set>
+        <lightning:datatable data="{!v.accountv}" columns="{!v.colums}" keyField="id"/>
+    </lightning:card>
+    
+</aura:component>

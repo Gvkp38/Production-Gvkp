@@ -1,0 +1,21 @@
+<aura:component controller="createAccount">
+    <aura:attribute name="acc" type="Account" default="{SobjectType:'Account'}"/>
+    <aura:attribute name="Con" type="Contact" default="{SobjectType:'Contact'}"/>
+    <lightning:card title="Account Details" iconName="standard:account" class="style">
+        <aura:set attribute="actions">
+            <lightning:button label="Submit" onclick="{!c.callme}" variant="brand"/>
+        </aura:set>
+        <lightning:input label="Account Name" value="{!v.acc.Name}"/>
+        <lightning:input label="Account Phone" value="{!v.acc.Phone}"/>
+        <lightning:input label="Account Rating" value="{!v.acc.Rating}"/>
+        <lightning:input label="Account Type" value="{!v.acc.Type}"/>
+    </lightning:card>   
+    <lightning:card title="Contact Details" iconName="standard:client" class="style">
+        <aura:set attribute="actions">
+            <lightning:button label="Submit" onclick="{!c.callme}" variant="brand"/>
+        </aura:set>
+        <lightning:input label="First Name" value="{!v.con.FirstName}"/>
+        <lightning:input label="Last Phone" value="{!v.con.LastName}"/>
+        <lightning:input label="Phone" value="{!v.con.Phone}"/>
+    </lightning:card>
+</aura:component>

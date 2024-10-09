@@ -1,0 +1,6 @@
+<aura:interface description="Interface template">
+	<aura:method name="Universal" action="{!c.call}">
+        <aura:attribute name="Name" type="string"/>
+        <aura:attribute name="Phone" type="string"/>
+    </aura:method>
+</aura:interface>

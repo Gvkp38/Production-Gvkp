@@ -1,0 +1,18 @@
+<aura:component implements="c:LI1010_interface_basicEg">
+    <aura:attribute name="Name1" type="String"/>
+    <aura:attribute name="Phone1" type="String"/>
+    <aura:attribute name="Email1" type="String"/>
+	<lightning:card title="Interface Card Test input">
+    <aura:set attribute="actions">
+      <lightning:button label="Submit" onclick="{!c.callme}" variant="brand"/>
+        </aura:set>
+        <lightning:input label="Name" value="{!v.Name1}"/>
+        <lightning:input label="Phone" value="{!v.Phone1}"/>
+        <lightning:input label="Email" value="{!v.Email1}"/>
+    </lightning:card>
+    <lightning:card title="Output Values">
+        Name :{!v.Name}<br/>
+        Phone :{!v.Phone}<br/>
+        Email :{!v.Email}<br/>
+    </lightning:card>
+</aura:component>

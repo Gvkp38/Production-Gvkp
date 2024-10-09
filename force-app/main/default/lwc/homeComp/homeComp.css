@@ -1,0 +1,27 @@
+.homestyle{
+    height:80vh;
+    border:10px ridge red;
+    border-radius:40px;
+    background-color: aquamarine;
+    font-size:50px;
+    color: blue;
+    font-weight: bolder;
+    text-shadow: 2px 2px grey;
+    font-family: calibri;
+    text-align:center;
+}
+
+.imgstyle{
+    animation-name: logoanim;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes logoanim {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Contact Input Card:" icon-name="standard:employee_contact">
+        <lightning-input label="LastName" onchange={LastName1}></lightning-input>
+        <lightning-input label="FirstName" onchange={FirstName1}></lightning-input>
+        <lightning-input label="Phone" onchange={Phone1}></lightning-input>
+        <lightning-input label="Email" onchange={Email1}></lightning-input>
+        <p slot="actions">
+        <lightning-button label="Save" variant="brand" onclick={fireme}></lightning-button></p>
+    </lightning-card>
+</template>

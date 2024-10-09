@@ -1,0 +1,43 @@
+<apex:page standardController="Account" extensions="Min_max">
+    <apex:messages />
+    <apex:form >
+            <apex:pageBlock title="Account details">
+             <apex:pageBlockSection >
+                 <apex:inputField Value="{!account.name}"/>
+                 <apex:inputField Value="{!account.Phone}"/>
+                 <apex:inputField Value="{!account.Fax}"/>
+                 <apex:inputField Value="{!account.Type}"/>
+                 <apex:commandButton value="Save" action="{!Save}"/>
+                 <apex:commandButton value="Save account" action="{!saveaccount}"/>
+               </apex:pageBlockSection>
+                </apex:pageBlock>
+    </apex:form>
+    <apex:form >
+    <apex:pageblock title="Calculation">
+        <apex:pageBlockSection >
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel value="Enter first Number"/>
+                <apex:inputText value="{!Num1}"/>
+            </apex:pageBlockSectionItem>
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel value="Enter second Number"/>
+                <apex:inputText value="{!Num2}" />
+            </apex:pageBlockSectionItem>
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel value="Enter Third Number"/>
+                <apex:inputText value="{!Num3}"/>
+            </apex:pageBlockSectionItem>
+			
+            <apex:selectRadio value="{!choice}">
+                <apex:selectOption itemlabel="Min" itemvalue="min"/>
+                <apex:selectOption itemlabel="Max" itemvalue="Max"/>
+            </apex:selectRadio>
+            <apex:commandButton value="Calcuate" action="{!Main}"/>            
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel value="Max Number"/>
+                <apex:outputText value="{!result}"/>
+            </apex:pageBlockSectionItem>
+        </apex:pageBlockSection>
+    </apex:pageblock>
+    </apex:form>
+</apex:page>
