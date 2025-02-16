@@ -1,0 +1,33 @@
+	<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+	<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>threadingId</members>
+        <name>LightningComponentBundle</name>
+    </types>
+    <types>
+        <members>UpdateThreadTokenForCase</members>
+        <members>ThredcomponentControler</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>Case.ThreadId__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>SupportTemplate/Welcome_email_template_1725513121499</members>
+        <name>EmailTemplate</name>
+    </types>
+   <types>
+<members>SupportTemplate</members>
+<name>EmailTemplateFolder</name>
+</types>
+    <types>
+        <members>case_thread_id_Update</members>
+        <name>Flow</name>
+    </types>
+    <types>
+        <members>case.Welcome_Email_case</members>
+        <name>WorkflowAlert</name>
+    </types>
+	    <version>56.0</version>
+	</Package>
